@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Main Website colors */
+:root {
+    --blue: #00D5FF;
+    --grey: #272727;
+    --white: #fff;
+    --orange: #eea904;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+li, a, button {
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navMenu {
+    list-style: none;
+    display: flex;
+}
+
+.navMenu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navMenu li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navMenu li a:hover {
+    color: var(--orange);
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #eea904;
+    border: var(--orange) 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #eea904;
+}
