@@ -2,10 +2,11 @@
 
 /* Main Website colors */
 :root {
-    --blue: #00D5FF;
-    --grey: #272727;
-    --white: #fff;
-    --orange: #eea904;
+    --coolWhite:#f2f4f7; /* */
+    --coolDark: #020205; /* rgba(2, 2, 5, 1) */
+    --silver: #d2d9e4; /* */
+    --smoke: #111129; /* rgba(17, 17, 41, 1) */
+    --blue: #0066ff; /* rgba(0, 102, 255, 1) */
 }
 
 * {
@@ -13,29 +14,41 @@
     padding: 0;
 }
 
+body {
+    font-family: "Monsterrat", sans-serif;
+}
+
+/* Navbar CSS */
+
+.header-container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/Properties/property2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
 
-li, a, button {
-    font-family: "Monsterrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-    color: black;
-}
-
-#logo {
+.logo {
+    color: #fff;
     cursor: pointer;
-    margin-right: auto;
 }
 
 .navMenu {
     list-style: none;
-    display: flex;
 }
 
 .navMenu li {
@@ -45,23 +58,55 @@ li, a, button {
 
 .navMenu li a {
     transition: all 0.3s ease 0s;
+    color: #fff;
 }
 
-.navMenu li a:hover {
-    color: var(--orange);
+.navMenu li a:hover{
+    color: var(--silver);
 }
 
 button {
-    margin-left: 20px;
     padding: 9px 25px;
-    background-color: #eea904;
-    border: var(--orange) 2px solid;
+    background-color: rgba(2, 2, 5, 1);
+    border: none;
     border-radius: 50px;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
+    color: #fff;
 }
 
 button:hover {
-    background-color: #fff;
-    color: #eea904;
+    background-color: rgba(2, 2, 5, 0.8);
 }
+
+.hero {
+    position: absolute;
+    margin: 15% 30%;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 62px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0 40px;
+}
+
+.hero a {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+.hero a:hover {
+    background-color: rgba(2, 2, 5, 1);
+    border: none;
+}
+
+/* Start of Section CSS */
