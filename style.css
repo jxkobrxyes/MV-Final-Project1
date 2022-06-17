@@ -113,10 +113,12 @@ header {
     border: none;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 835px) {
     .hero h1 {
         font-size: 20px;
     }
+
+
 }
 /* ------------------------------------------------------ */
 
@@ -328,7 +330,7 @@ header {
 
 .card:hover {
     transform: scale(1.03);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease 0s;
 }
 
 .card i {
@@ -347,7 +349,7 @@ header {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1149px) {
     .card-title {
         margin: 40px;
     }
@@ -371,11 +373,11 @@ header {
 /* Start of Footer section */
 .footer-container {
     background-color: var(--coolDark);
-    padding: 4rem 0rem 4rem 0rem;
+    padding: 4rem 0;
 }
 
 .footer {
-    height: 40vh;
+    height: 28vh;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -387,7 +389,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 280px;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .footer-heading h2 {
@@ -414,7 +416,7 @@ header {
     padding: 0 7px;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1149px) {
     .footer {
         height: auto;
         text-align: center;
