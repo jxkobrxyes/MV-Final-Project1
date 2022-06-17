@@ -12,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -297,7 +298,8 @@ header {
 
 /* Start of cards section */
 .card-sec {
-    height: 80vh;
+    height: 75vh;
+    margin-bottom: 80px;
 }
 
 .card-title {
@@ -353,61 +355,68 @@ header {
     .card {
         width: 190px;
         height: 300px;
-        display: inline-block;
         font-size: 12px;
     }
 
     .card p {
         margin: 20px 0 65px 0;
     }
+
+     .card-sec {
+        height: auto;
+    } 
 }
 /* ------------------------------------------------------ */
 
 /* Start of Footer section */
-.footer {
-    background-color: var(--coolDark);
-    padding: 70px 0;
-    line-height: 1.5;
-}
-
 .footer-container {
-    max-width: 1170px;
-    margin: auto;
+    background-color: var(--coolDark);
+    padding: 4rem 0rem 4rem 0rem;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-col {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-col h4 {
-    font-size: 18px;
+.footer {
+    height: 40vh;
     color: #fff;
-    margin-bottom: 20px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 20px;
 }
 
-.footer-col h4::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background: #fff;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 3rem 0;
 }
 
-.footer-col ul {
-    list-style: none;
+.footer-heading h2 {
+    margin-bottom: 2rem;
 }
 
-.footer-col ul li {
-    margin-bottom: 10px;
+.footer-heading a {
+    color: #fff;
+    margin-bottom: 0.5rem;
 }
 
+.social {
+    width: 280px;
+    margin: 3rem 0;
+
+}
+
+.social h2 {
+    margin-bottom: 30px;
+}
+
+.social a {
+    color: white;
+    padding: 0 7px;
+}
+
+@media screen and (max-width: 1150px) {
+    .footer {
+        height: auto;
+        text-align: center;
+    }
+}
